@@ -17,6 +17,7 @@ st.title("Welcome to our iNTUition 2022 App!")
 #     st.markdown("And that's it! The prediction will appear magically before your eyes. It's that **easy**!")            
 
 hello = 100
+SW_lengzai = 10000
 
 # footer          
 st.markdown("*By **Kai Seong**, **Shao Wei**, **Ci Hui** & **Horstann** for iNTUition 2022.*")
