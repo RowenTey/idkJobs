@@ -1,0 +1,9 @@
+What to include (general):
+- big tech companies (top-searched)
+- common interview questions
+
+What to include (container):
+- pre-requisite
+- salary range
+- general job scope
+- interview prep
