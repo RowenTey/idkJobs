@@ -1,6 +1,7 @@
 What to include (general):
 - big tech companies (top-searched)
 - common interview questions
+- common languages to pickup
 
 What to include (container):
 - pre-requisite
