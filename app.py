@@ -1,6 +1,5 @@
-from enum import auto
-from importlib_metadata import always_iterable
 import streamlit as st
+import webbrowser
 from time import sleep
 
 st.set_page_config(
@@ -45,7 +44,7 @@ st.markdown("""
                     <li>Find your area of passion in the tech field.</li>
                     <li>Pick a language from the tech stack in that area.</li>
                     <li>Master the language by doing side projects and/or taking courses.</li>
-                    <li>Study and revise the relevant topics in that area.</li>
+                    <li>Study and revise  relevant topics in that area.</li>
                     <li>Pratice technical questions with Leetcode/HackerRank.</li>
                     <li>Prepare for potential behavioral questions.</li>
                     <li>Craft your resume neatly.</li>
@@ -312,13 +311,20 @@ if (user_input=="Blockchain Engineer"):
                unsafe_allow_html=True)  
 ###
 
-st.markdown("""---""")
 st.markdown("<h2 style='text-align: center;'>Sources</h2>", unsafe_allow_html=True)
-st.markdown("""
-            
-            """, unsafe_allow_html=True)
-st.markdown("""---""")
-
+col4, col5, col6=  st.columns(3)
+with col4:
+    st.image("https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/egfdbogz9ptr50dfinet")
+    if st.button("NodeFlair"):
+        webbrowser.open_new_tab("https://www.nodeflair.com/")            
+with col5:
+    st.image("https://icon-library.com/images/linkedin-icon-for-resume/linkedin-icon-for-resume-11.jpg")
+    if st.button("LinkedIn"):
+        webbrowser.open_new_tab("https://www.linkedin.com/") 
+with col6:
+    st.image("https://static-s.aa-cdn.net/img/ios/589698942/b124131d1f8676c078cd215d158321ba?v=1")
+    if st.button("GlassDoor"):
+        webbrowser.open_new_tab("https://www.glassdoor.sg/")
 
 # footer
 st.markdown("""---""")          
