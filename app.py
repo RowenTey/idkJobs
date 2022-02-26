@@ -5,7 +5,7 @@ from time import sleep
 
 st.set_page_config(
     page_title="idkJobs",
-    page_icon="https://icon-library.com/images/career-icon-png/career-icon-png-0.jpg",
+    page_icon="https://cdn-icons-png.flaticon.com/512/747/747086.png",
     initial_sidebar_state='collapsed'
 ) 
 
@@ -13,7 +13,6 @@ roles = ["Software Engineer", "Data Engineer", "Cloud Engineer", "Blockchain Eng
          "Front-End Developer", "Back-End Developer", 
          "Game Developer", "Mobile Developer"]
 
-# st.image("https://cdn.substack.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4b8647a-09e8-4576-95de-e622dcc38d72_1280x720.jpeg")
 st.markdown("<h1 style='text-align: center;'>Welcome to idkJobs!</h1>", unsafe_allow_html=True) 
 st.markdown("<h3 style='text-align: center; font-style: italic;'>Looking for an internship/entry-level role in the tech industry but don't know where to start? Fear not, you've came to the right place, simply click on the sidebar to find out more!</h3>", unsafe_allow_html=True)
 
@@ -50,6 +49,7 @@ st.markdown("""
                     <li>Pratice technical questions with Leetcode/HackerRank.</li>
                     <li>Prepare for potential behavioral questions.</li>
                     <li>Craft your resume neatly.</li>
+                    <li>Prepare a list of good questions to ask.</li>
                     <li>Be confident in your abilities.</li>
                     <li>Ace the interview and get the job.</li>
             </ol>
@@ -65,10 +65,25 @@ if (user_input=="Front-End Developer"):
     c.markdown("<h3>What does a Front-End Developer do?</h3>", unsafe_allow_html=True)
     c.info("A front-end developer is responsible for using their knowledge of programming languages to code user-side applications, including visual elements like menu bars, clickable buttons and the overall layout of websites or web applications.")
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
-    c.markdown("<h5 style='font-style: italic;'>Web Development, HTTP Protocols</h5>",
+    c.markdown("<h5 style='font-style: italic;'>Web Development, HTTP Protocols, Data Structures and Algorithms, User Interface</h5>",
                unsafe_allow_html=True)
     c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
     c.markdown("<h5 style='font-style: italic;'>HTML/CSS, Javascript, React/Angular/Vue, Webpack/Rollup/BaBel/AST/Gulp</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
+    c.markdown("""
+               <ul>
+                    <li>What is ‘Version Control System’?</li>
+                    <li>What are your favorite features of HTML5, and how have you implemented them in your front-end development projects?</li>
+                    <li>Can you explain the concept of a CSS float and provide an example of its usage?</li>
+                    <li>Explain how you would ensure that your web design is user-friendly and what kinds of steps would you use?</li>
+                    <li>What is User Centered Design?</li>
+                    <li>If Node.js is single threaded, then how does it handle concurrency?</li>
+                </ul>
+               """,
+               unsafe_allow_html=True)
+    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5>Junior : <i>$1000 - $5400</i></h5>",
                unsafe_allow_html=True)
 
 if (user_input=="Back-End Developer"):
@@ -78,10 +93,25 @@ if (user_input=="Back-End Developer"):
     c.markdown("<h3>What does a Back-End Developer do?</h3>", unsafe_allow_html=True)
     c.info("A back-end Developer is  responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.")
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
-    c.markdown("<h5 style='font-style: italic;'>Web Development, HTTP Protocols</h5>",
+    c.markdown("<h5 style='font-style: italic;'>Web Development, API Development, Data Structures and Algorithms, Databases</h5>",
                unsafe_allow_html=True)
     c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
     c.markdown("<h5 style='font-style: italic;'>Golang, Node.js, Django, Laravel(PHP), SQL/NoSQL Databases, Agile/Scrum</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
+    c.markdown("""
+               <ul>
+                    <li>How would you manage Web Services API versioning?</li>
+                    <li>What is CAP Theorem?</li>
+                    <li>How would you find the most expensive queries in an application?</li>
+                    <li>How to mitigate the SQL Injection risks?</li>
+                    <li>How does B-trees Index work?</li>
+                    <li>Which sorting algorithm to use and when?</li>
+                </ul>
+               """,
+               unsafe_allow_html=True)
+    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5>Junior : <i>$1000 - $5000</i></h5>",
                unsafe_allow_html=True)
     
 if (user_input=="Game Developer"):
@@ -91,8 +121,26 @@ if (user_input=="Game Developer"):
     c.markdown("<h3>What does a Game Developer do?</h3>", unsafe_allow_html=True)
     c.info("A game developer is responsible for designing and developing video games for PC, console, and mobile applications. Their job is to code the base engine from the ideas of the design team. They may also be involved in character design, level design, animation, and unit testing.")
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Game Design Pattern, 3D Graphics and Associated Maths, Graphics Programming</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Unity, three.js. Unreal Engine, Phaser, Godot</h5>",
+               unsafe_allow_html=True)
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
-    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)    
+    c.markdown("""
+               <ul>
+                    <li>What game are you most proud of developing and why?</li>
+                    <li>What are the models used to make money in gaming business?</li>
+                    <li>Why C++ language is more preferred for game development?</li>
+                    <li>How can you reduce game lag?</li>
+                    <li>How good is Bitbucket/GitHub for game development?</li>
+                    <li>What is “onsurfacecreated” in Android game development?</li> 
+                </ul>
+               """,
+               unsafe_allow_html=True)
+    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5>Junior : <i>$1000 - $4100</i></h5>",
+               unsafe_allow_html=True)     
 
 if (user_input=="Cloud Engineer"):
     c = st.container()
@@ -101,11 +149,28 @@ if (user_input=="Cloud Engineer"):
     c.markdown("<h3>What does a Cloud Engineer do?</h3>", unsafe_allow_html=True)
     c.info("A cloud engineer is responsible to design, implement, and manage cloud-based systems for businesses. They develop and implement cloud-applications, migrate existing on-premise applications to the cloud, and debug cloud stacks.")
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Understand LinuxOS, Networking and Internet Protocols, DevOps and Containerization</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Understand Virtualization, Web Services and API, Cloud Service Providers</h5>",
+               unsafe_allow_html=True)
     c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
-    c.markdown("<h5 style='font-style: italic;'>Java/AngularJS/C++/Python/PHP/Ruby, MySQL/Hadoop, Linux, AWS/Azure/Firebase</h5>",
+    c.markdown("<h5 style='font-style: italic;'>Java/AngularJS/C++/Python/PHP/Ruby, MySQL/Hadoop, Linux, AWS/Azure/Firebase/GCP</h5>",
                unsafe_allow_html=True)
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
-    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)    
+    c.markdown("""
+               <ul>
+                    <li>Describe the different cloud service models?</li> 
+                    <li>What is The Packaging of Hybrid Cloud? What are the two main types of packaged hybrid cloud?</li>
+                    <li>What is a Distributed Cloud?</li>
+                    <li>What does Edge Computing mean, and how is it related to the cloud?</li>
+                    <li>Which are the main constituents of the cloud ecosystem?</li>
+                    <li>Mention the reliability and availability of Cloud Computing.</li>
+                </ul>
+               """,
+               unsafe_allow_html=True)
+    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)  
+    c.markdown("<h5>Junior : <i>$1800 - $5300</i></h5>",
+               unsafe_allow_html=True)  
 
 if (user_input=="Mobile Developer"):
     c = st.container()
@@ -114,8 +179,31 @@ if (user_input=="Mobile Developer"):
     c.markdown("<h3>What does a Mobile Developer do?</h3>", unsafe_allow_html=True)
     c.info("A mobile developer uses programming languages and development skills to create, test, and develop applications on mobile devices. They work in popular operating system environments like iOS and Android and often take into account UI and UX principles when creating applications.")
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Program Design, User Interface, Data Structures and Algorithms, Databases, Operating System</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Flutter/React Native, Cordova/Ionic</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>IOS - Objectice-C & Swift</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Android - Java & Kotlin</h5>",
+               unsafe_allow_html=True)
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
-    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)    
+    c.markdown("""
+               <ul>
+                    <li>List some benefits of using React Native for building mobile apps?</li>
+                    <li>What are the advantages of hybrid apps over native apps?</li>
+                    <li>How to persist data in an Android app?</li>
+                    <li>What is the difference between PhoneGap, Cordova, and Ionic?</li>
+                    <li>How to avoid reverse engineering of an APK file? </li>
+                    <li>What is Builder pattern?</li>
+                </ul>
+               """,
+               unsafe_allow_html=True)
+    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True) 
+    c.markdown("<h5>Junior : <i>$2500 - $5000</i></h5>",
+               unsafe_allow_html=True)     
+   
     
 if (user_input=="Data Engineer"):
     c = st.container()
@@ -124,22 +212,30 @@ if (user_input=="Data Engineer"):
     c.markdown("<h3>What does a Data Engineer do?</h3>", unsafe_allow_html=True)
     c.info("A developer who is responsible to build systems that collect, manage, and convert raw data into usable information for data scientists and business analysts to interpret. Their ultimate goal is to make data accessible so that organizations can use it to evaluate and optimize their performance.")
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
-    c.markdown("<h5 style='font-style: italic;'>Blockchain Architecture, Cryptography, Smart Contract Development, Web-Development</h5>",
+    c.markdown("<h5 style='font-style: italic;'>Operating Systems, Databases, Data Warehousing, Machine Learning</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>SQL, Java/Python/Go, DynamoDB/Hadoop/MongoDB, AWS/GCP/Azure, Spark/Apache, Beam, Flink</h5>",
                unsafe_allow_html=True)
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
     c.markdown("""
                <ul>
-                    <li>Differentiate between Blockchain and Hyperledger.</li>
-                    <li>What happens when you try to deploy a file with multiple contracts?</li>
-                    <li>List down some of the extensively used cryptographic algorithms.</li>
-                    <li>Where do nodes run a smart contract code? </li>
-                    <li>Explain a real-life use-case where Blockchain is being used.</li>
-                    <li>What is a 51% attack? </li>
-                    <li>Write a crowd-scale smart contract code in Solidity programming language.</li>
+                    <li>What are the differences between structured and unstructured data?</li> 
+                    <li>Can you speak about types of design schemas in data modelling?</li>
+                    <li>What is your experience of Big Data in a cloud environment?</li>
+                    <li>What is the replication factor in HDFS?</li>
+                    <li>How can Data Analytics and Big Data help to positively impact the bottom line of the company?</li>
+                    <li>What are the security features in Hadoop?</li>
                 </ul>
                """,
                unsafe_allow_html=True)
     c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5>Intern : <i>$900 - $2000</i></h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h5>Junior : <i>$3150 - $8500</i></h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h5>Median : <i>$5500</i></h5>",
+               unsafe_allow_html=True)
     
 ###
 
@@ -158,26 +254,24 @@ if (user_input=="Software Engineer"):
     c.markdown("<h5 style='font-style: italic;'>Node.js, Python/PHP/Java/C/JavaScript, React, MySQL, Django, Ruby, Apache, Nginx</h5>",
                unsafe_allow_html=True)
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
+    c.markdown("""
+               <ul>
+                    <li>What is Software configuration management?</li>
+                    <li>What are functional and non-functional requirements?</li>
+                    <li>What is modularization?</li>
+                    <li>Which process model removes defects before software gets into trouble?</li>
+                    <li>Do you think that the maintenance of software is expensive?</li>
+                    <li>What are your thoughts on Agile development</li>
+                </ul>
+               """,
+               unsafe_allow_html=True)
     c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
-    
-
-# container1 = st.container()
-# container1.title("**_Software Engineer_**")
-# container1.subheader("What is a software engineer?")
-# container1.info("Software engineers, sometimes called software developers, create software for computers and applications.")
-# container1.subheader("General Job Scope:")
-# container1.text("-Analyze, design and develop tests and test-automation suites.\n-Design and develop a processing platform using various configuration management technologies.\n-Test software development methodology in an agile environment.\n-Provide ongoing maintenance, support and enhancements in existing systems and platforms.\n-Collaborate cross-functionally with data scientists, business users, project managers and other engineers to achieve elegant solutions.\n-Provide recommendations for continuous improvement.\n-Work alongside other engineers on the team to elevate technology and consistently apply best practices.")
-# container1.subheader("Pre-Requisites:")
-# container1.subheader("Popular Interview Questions:")
-# container1.text("-Experience:\nEg: Share more about the projects in your current and past work\n-Online Assessment, Live Coding, Leetcode/HackerRanks Questions\nEg: Array, Linkedlist, BinaryTree, Sort, String, Dynamic Programming, Stack&Queue, Matrix\n-System and Database Design\nEg: API Design, URL shorteners, Booking System, University Course Allocation System\n-Networking and Web Security\nEg: HTTP/HTTPS , DNS-How does it work, SSL handshake protocol\n-Operating Systems\nEg: Thread and Processes, Mutex vs Semaphore, Condition of deadlock\n")
-# container1.subheader("Salary Range")
-# Junior	: $3000 -$7500, median: $4750
-# Mid		: $4250 - $9500, median: $6500
-# Senior	: $5250 - $11500, median: $7500
-# Lead		: $6500 - $15950, median: $9000
-# Principal	: $6700 - $17000, median: $10000
-# Manager	: $7000 - $21000, median: $12000
-
+    c.markdown("<h5>Intern : <i>$1000 - $4000</i></h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h5>Junior : <i>$3000 - $7500</i></h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h5>Median : <i>$4750</i></h5>",
+               unsafe_allow_html=True)
 
 ###
 
@@ -197,6 +291,9 @@ if (user_input=="Blockchain Engineer"):
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
     c.markdown("<h5 style='font-style: italic;'>Blockchain Architecture, Cryptography, Smart Contract Development, Web-Development</h5>",
                unsafe_allow_html=True)
+    c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>C++, Java, C#, JavaScript, Go, Python, Ruby, Solidity</h5>",
+               unsafe_allow_html=True)
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
     c.markdown("""
                <ul>
@@ -211,7 +308,8 @@ if (user_input=="Blockchain Engineer"):
                """,
                unsafe_allow_html=True)
     c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
-
+    c.markdown("<h5>Junior : <i>$3730 - $10400</i></h5>",
+               unsafe_allow_html=True)  
 ###
 
 st.markdown("""---""")
