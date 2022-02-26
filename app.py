@@ -10,7 +10,7 @@ st.set_page_config(
 ) 
 
 roles = ["Software Engineer", "Data Engineer", "Cloud Engineer", "Blockchain Engineer",
-         "Full-Stack Developer", "Front-End Developer", "Back-End Developer", 
+         "Front-End Developer", "Back-End Developer", 
          "Game Developer", "Mobile Developer"]
 
 # st.image("https://cdn.substack.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4b8647a-09e8-4576-95de-e622dcc38d72_1280x720.jpeg")
@@ -40,13 +40,27 @@ with col3:
 
 
 st.markdown("""---""")
-
+st.markdown("<h2 style='text-align: center;'>From Zero to <i>Hero</i></h2>", unsafe_allow_html=True)
+st.markdown("""
+            <ol>
+                    <li>Find your area of passion in the tech field.</li>
+                    <li>Pick a language from the tech stack in that area.</li>
+                    <li>Master the language by doing side projects and/or taking courses.</li>
+                    <li>Study and revise the relevant topics in that area.</li>
+                    <li>Pratice technical questions with Leetcode/HackerRank.</li>
+                    <li>Prepare for potential behavioral questions.</li>
+                    <li>Craft your resume neatly.</li>
+                    <li>Be confident in your abilities.</li>
+                    <li>Ace the interview and get the job.</li>
+            </ol>
+            """, unsafe_allow_html=True)
+st.markdown("""---""")
 
 ### Kai Seong
 
 if (user_input=="Front-End Developer"):
     c = st.container()
-    c.image("https://www.datocms-assets.com/14946/1590690690-front-end.jpg")
+    c.image("http://dreamsoft4u.com/blog/wp-content/uploads/2019/05/Technologies-Encapsulating-the-Frontend.png")
     c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Front-End Developer</h2>", unsafe_allow_html=True) 
     c.markdown("<h3>What does a Front-End Developer do?</h3>", unsafe_allow_html=True)
     c.info("A front-end developer is responsible for using their knowledge of programming languages to code user-side applications, including visual elements like menu bars, clickable buttons and the overall layout of websites or web applications.")
@@ -59,6 +73,7 @@ if (user_input=="Front-End Developer"):
 
 if (user_input=="Back-End Developer"):
     c = st.container()
+    c.image("https://media.bitdegree.org/storage/media/images/2018/10/front-end-vs-back-end-developer-back-end-toolbox.png")
     c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Back-End Developer</h2>", unsafe_allow_html=True) 
     c.markdown("<h3>What does a Back-End Developer do?</h3>", unsafe_allow_html=True)
     c.info("A back-end Developer is  responsible for server-side web application logic and integration of the work front-end web developers do. Back-end developers usually write web services and APIs used by front-end developers and mobile application developers.")
@@ -69,15 +84,9 @@ if (user_input=="Back-End Developer"):
     c.markdown("<h5 style='font-style: italic;'>Golang, Node.js, Django, Laravel(PHP), SQL/NoSQL Databases, Agile/Scrum</h5>",
                unsafe_allow_html=True)
     
-if (user_input=="Full-Stack Developer"):
-    c = st.container()
-    c.image("https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190531175841/Full-Stack-Web-Developer.png")
-    c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Full-Stack Developer</h2>", unsafe_allow_html=True)    
-    c.markdown("<h3>What does a Full-Stack Developer do?</h3>", unsafe_allow_html=True)
-    c.info("A full-stack developer is responsible for designing user interactions on websites, developing servers and databases for website functionality, essentially combining the duties of a front and back-end developer.")
-    
 if (user_input=="Game Developer"):
     c = st.container()
+    c.image("https://support.musicgateway.com/wp-content/uploads/2021/06/3-game-developer-jobs-2.png")
     c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Game Developer</h2>", unsafe_allow_html=True)
     c.markdown("<h3>What does a Game Developer do?</h3>", unsafe_allow_html=True)
     c.info("A game developer is responsible for designing and developing video games for PC, console, and mobile applications. Their job is to code the base engine from the ideas of the design team. They may also be involved in character design, level design, animation, and unit testing.")
@@ -87,15 +96,20 @@ if (user_input=="Game Developer"):
 
 if (user_input=="Cloud Engineer"):
     c = st.container()
+    c.image("https://sados.com/wp-content/uploads/2019/01/cloudengineer-750x400.jpeg")
     c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Cloud Engineer</h2>", unsafe_allow_html=True)
     c.markdown("<h3>What does a Cloud Engineer do?</h3>", unsafe_allow_html=True)
     c.info("A cloud engineer is responsible to design, implement, and manage cloud-based systems for businesses. They develop and implement cloud-applications, migrate existing on-premise applications to the cloud, and debug cloud stacks.")
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
+    c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Java/AngularJS/C++/Python/PHP/Ruby, MySQL/Hadoop, Linux, AWS/Azure/Firebase</h5>",
+               unsafe_allow_html=True)
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
     c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)    
 
 if (user_input=="Mobile Developer"):
     c = st.container()
+    c.image("https://www.ipraxa.com/blog/wp-content/uploads/2018/09/mobile-app-development-technologies.png")
     c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Mobile Developer</h2>", unsafe_allow_html=True)
     c.markdown("<h3>What does a Mobile Developer do?</h3>", unsafe_allow_html=True)
     c.info("A mobile developer uses programming languages and development skills to create, test, and develop applications on mobile devices. They work in popular operating system environments like iOS and Android and often take into account UI and UX principles when creating applications.")
@@ -103,16 +117,46 @@ if (user_input=="Mobile Developer"):
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
     c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)    
     
+if (user_input=="Data Engineer"):
+    c = st.container()
+    c.image("https://149695847.v2.pressablecdn.com/wp-content/uploads/2017/11/why-data-engineer-trending-01.jpg")
+    c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Data Engineer</h2>", unsafe_allow_html=True)
+    c.markdown("<h3>What does a Data Engineer do?</h3>", unsafe_allow_html=True)
+    c.info("A developer who is responsible to build systems that collect, manage, and convert raw data into usable information for data scientists and business analysts to interpret. Their ultimate goal is to make data accessible so that organizations can use it to evaluate and optimize their performance.")
+    c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Blockchain Architecture, Cryptography, Smart Contract Development, Web-Development</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
+    c.markdown("""
+               <ul>
+                    <li>Differentiate between Blockchain and Hyperledger.</li>
+                    <li>What happens when you try to deploy a file with multiple contracts?</li>
+                    <li>List down some of the extensively used cryptographic algorithms.</li>
+                    <li>Where do nodes run a smart contract code? </li>
+                    <li>Explain a real-life use-case where Blockchain is being used.</li>
+                    <li>What is a 51% attack? </li>
+                    <li>Write a crowd-scale smart contract code in Solidity programming language.</li>
+                </ul>
+               """,
+               unsafe_allow_html=True)
+    c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
+    
 ###
 
 ### Shao Wei
 
 if (user_input=="Software Engineer"):
     c = st.container()
+    c.image("http://www.cybersorcerors.com/uploads/1/2/0/3/120346811/softwareengineeringdiagram_orig.jpg")
     c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Software Engineer</h2>", unsafe_allow_html=True)
     c.markdown("<h3>What does a Software Engineer do?</h3>", unsafe_allow_html=True)
     c.info("A software engineer is responsible for creating software for computers and applications. He will have to analyze, design and develop tests and test-automation as well as collaborate cross-functionally with data scientists, business users, project managers and other engineers to achieve elegant solutions")
     c.markdown("<h3>Pre-Requisites:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Discrete Math, Data Structure and Algorithms, Algorithm Analysis, Web-Development, Databases, Operating Systems, System Design</h5>",
+               unsafe_allow_html=True)
+    c.markdown("<h3>Tech-Stacks:</h3>", unsafe_allow_html=True)
+    c.markdown("<h5 style='font-style: italic;'>Node.js, Python/PHP/Java/C/JavaScript, React, MySQL, Django, Ruby, Apache, Nginx</h5>",
+               unsafe_allow_html=True)
     c.markdown("<h3>Popular Interview Questions:</h3>", unsafe_allow_html=True)
     c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
     
@@ -146,6 +190,7 @@ if (user_input=="Software Engineer"):
 
 if (user_input=="Blockchain Engineer"):
     c = st.container()
+    c.image("https://d1rytvr7gmk1sx.cloudfront.net/wp-content/uploads/2020/08/istock-1131340856.jpg")
     c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Blockchain Engineer</h2>", unsafe_allow_html=True)
     c.markdown("<h3>What does a Blockchain Engineer do?</h3>", unsafe_allow_html=True)
     c.info("A developer who is responsible for designing, developing and optimizing blockchain protocols, designing the network architecture of blockchain system that can be used for centralizing or decentralizing the data, developing and monitoring smart contracts and web apps using blockchain technology, developing front-end designs according to client requirements and backend development according to the Blockchain protocols in general. ")
@@ -162,11 +207,20 @@ if (user_input=="Blockchain Engineer"):
                     <li>Explain a real-life use-case where Blockchain is being used.</li>
                     <li>What is a 51% attack? </li>
                     <li>Write a crowd-scale smart contract code in Solidity programming language.</li>
+                </ul>
                """,
                unsafe_allow_html=True)
     c.markdown("<h3>Salary Range:</h3>", unsafe_allow_html=True)
 
 ###
+
+st.markdown("""---""")
+st.markdown("<h2 style='text-align: center;'>Sources</h2>", unsafe_allow_html=True)
+st.markdown("""
+            
+            """, unsafe_allow_html=True)
+st.markdown("""---""")
+
 
 # footer
 st.markdown("""---""")          
