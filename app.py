@@ -2,7 +2,6 @@ import streamlit as st
 import webbrowser
 from PIL import Image
 
-
 st.set_page_config(
     page_title="idkJobs",
     page_icon="https://icon-library.com/images/career-icon-png/career-icon-png-0.jpg",
