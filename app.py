@@ -1,4 +1,7 @@
 import streamlit as st 
+import webbrowser
+from PIL import Image
+
 
 
 st.set_page_config(
@@ -9,6 +12,7 @@ st.set_page_config(
     
 st.image("https://cdn.substack.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4b8647a-09e8-4576-95de-e622dcc38d72_1280x720.jpeg")
 st.title("Looking for a job?")
+
 
 # with st.expander("How To Use"):
 #     st.markdown("First, type in the **ticker** symbol you're looking for.")  
@@ -23,6 +27,11 @@ st.title("Looking for a job?")
 ###
 
 ### Shao Wei
+container1 = st.container()
+container1.title("**_Software Engineer_**")
+container1.header("Interview")
+container1.subheader("Software Engineer")
+container1.text("Software Engineer")
 
 
 ###
