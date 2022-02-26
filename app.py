@@ -1,4 +1,6 @@
 import streamlit as st 
+import webbrowser
+from PIL import Image
 
 st.set_page_config(
     page_title="idkJobs",
@@ -23,6 +25,22 @@ user_input = st.sidebar.selectbox("Select a role", roles)
 ###
 
 ### Shao Wei
+container1 = st.container()
+container1.title("**_Software Engineer_**")
+container1.subheader("What is a software engineer?")
+container1.info("Software engineers, sometimes called software developers, create software for computers and applications.")
+container1.subheader("General Job Scope:")
+container1.text("-Analyze, design and develop tests and test-automation suites.\n-Design and develop a processing platform using various configuration management technologies.\n-Test software development methodology in an agile environment.\n-Provide ongoing maintenance, support and enhancements in existing systems and platforms.\n-Collaborate cross-functionally with data scientists, business users, project managers and other engineers to achieve elegant solutions.\n-Provide recommendations for continuous improvement.\n-Work alongside other engineers on the team to elevate technology and consistently apply best practices.")
+container1.subheader("Pre-Requisites:")
+container1.subheader("Popular Interview Questions:")
+container1.text("-Experience:\nEg: Share more about the projects in your current and past work\n-Online Assessment, Live Coding, Leetcode/HackerRanks Questions\nEg: Array, Linkedlist, BinaryTree, Sort, String, Dynamic Programming, Stack&Queue, Matrix\n-System and Database Design\nEg: API Design, URL shorteners, Booking System, University Course Allocation System\n-Networking and Web Security\nEg: HTTP/HTTPS , DNS-How does it work, SSL handshake protocol\n-Operating Systems\nEg: Thread and Processes, Mutex vs Semaphore, Condition of deadlock\n")
+container1.subheader("Salary Range")
+# Junior	: $3000 -$7500, median: $4750
+# Mid		: $4250 - $9500, median: $6500
+# Senior	: $5250 - $11500, median: $7500
+# Lead		: $6500 - $15950, median: $9000
+# Principal	: $6700 - $17000, median: $10000
+# Manager	: $7000 - $21000, median: $12000
 
 
 ###
