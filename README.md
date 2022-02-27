@@ -1,5 +1,5 @@
 # [idkJobs](https://share.streamlit.io/rowentey/intuition-2022/main/app.py)
-*A web app that allows University students or Fresh Graduates to get infomation about their ideal job.*
+*A web app that allows university students or fresh Graduates to get infomation about their ideal job.*
 
 ---
 
