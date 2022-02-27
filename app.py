@@ -331,7 +331,7 @@ if (user_input=="Data Engineer"):
     
 if (user_input=="Software Engineer"):
     c = st.container()
-    c.image("http://www.cybersorcerors.com/uploads/1/2/0/3/120346811/softwareengineeringdiagram_orig.jpg")
+    c.image("softwareengineering.jpg")
     c.markdown("<h2 style='text-align: center; text-decoration: underline;'>Software Engineer</h2>", unsafe_allow_html=True)
     c.markdown("<h3>What does a Software Engineer do?</h3>", unsafe_allow_html=True)
     c.info("A software engineer is responsible for creating software for computers and applications. He will have to analyze, design and develop tests and test-automation as well as collaborate cross-functionally with data scientists, business users, project managers and other engineers to achieve elegant solutions")
