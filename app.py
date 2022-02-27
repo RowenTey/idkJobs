@@ -641,7 +641,7 @@ col4, col5, col6=  st.columns(3)
 with col4:
     st.image("https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/egfdbogz9ptr50dfinet")
     if st.button("NodeFlair"):
-        webbrowser.open_new_tab("https://www.nodeflair.com/")            
+        st.markdown("<a href='https://www.nodeflair.com/'></a>", unsafe_allow_markdown=True)           
 with col5:
     st.image("https://icon-library.com/images/linkedin-icon-for-resume/linkedin-icon-for-resume-11.jpg")
     if st.button("LinkedIn"):
