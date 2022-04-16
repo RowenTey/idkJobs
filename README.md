@@ -5,7 +5,7 @@
 
 This website is fully coded with Python, utilising the `Streamlit` module to structure our web app.  
 
-The `webbrowser` module was also used to allow displaying web-based documents to users.
+The `webbrowser` module was also used to allow displaying of web-based documents to users.
 
 
 ---
