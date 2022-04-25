@@ -20,5 +20,5 @@ Additionally, you can specifically select an area you want to know such as **Int
 Hooray! You get all the information about your ideal job with just one click!
 
 ---
-*This repository is submitted as an entry for [iNTUition 2022](https://intuition.ieeentu.com/) by Kai Seong, Shao Wei, Horstann & Ci Hui*
+*This repository is submitted as an entry for [iNTUition 2022](https://intuition.ieeentu.com/) by Kai Seong, Shao Wei, Horstann & Ci Hui.*
 
